@@ -1,0 +1,14 @@
+[package]
+name = "questionnaire_godot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gdnative = "0.11"
+questionnaire = { path = "../questionnaire" }
+sql_database = { path = "../sql_database" }
+plotting = { path = "../plotting" }

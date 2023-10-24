@@ -1,0 +1,166 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "DatabaseAPI",
+"language": "GDScript",
+"path": "res://resources/database_api.gd"
+}, {
+"base": "Control",
+"class": "DatabaseView",
+"language": "GDScript",
+"path": "res://scenes/DatabaseView/database_view.gd"
+}, {
+"base": "MarginContainer",
+"class": "Field",
+"language": "GDScript",
+"path": "res://scenes/Row/Field/field.gd"
+}, {
+"base": "PopupPanel",
+"class": "FieldEditor",
+"language": "GDScript",
+"path": "res://scenes/SpecificationEditor/field_editor.gd"
+}, {
+"base": "MarginContainer",
+"class": "FormView",
+"language": "GDScript",
+"path": "res://scenes/FormView/form_view.gd"
+}, {
+"base": "QcrData",
+"class": "JobHeaderData",
+"language": "GDScript",
+"path": "res://resources/job_header_data.gd"
+}, {
+"base": "OptionButton",
+"class": "OptionStatusButton",
+"language": "GDScript",
+"path": "res://scenes/QuestionnaireView/OptionStatusButton/option_status_button.gd"
+}, {
+"base": "Resource",
+"class": "QCReport",
+"language": "NativeScript",
+"path": "res://qcreport.gdns"
+}, {
+"base": "Control",
+"class": "QCReportView",
+"language": "GDScript",
+"path": "res://scenes/QCReportView/qcreport_view.gd"
+}, {
+"base": "Resource",
+"class": "QcrData",
+"language": "GDScript",
+"path": "res://resources/qcr_data.gd"
+}, {
+"base": "Control",
+"class": "QueryStart",
+"language": "GDScript",
+"path": "res://scenes/QueryStart/query_start.gd"
+}, {
+"base": "",
+"class": "QuestionnaireDisplay",
+"language": "NativeScript",
+"path": "res://questionnaire_display.gdns"
+}, {
+"base": "Control",
+"class": "Row",
+"language": "GDScript",
+"path": "res://scenes/Row/row.gd"
+}, {
+"base": "Resource",
+"class": "RowData",
+"language": "GDScript",
+"path": "res://resources/row_data.gd"
+}, {
+"base": "Resource",
+"class": "SQLDatabaseAPI",
+"language": "NativeScript",
+"path": "res://gd_database_api.gdns"
+}, {
+"base": "Resource",
+"class": "SQLJobDatabaseAPI",
+"language": "NativeScript",
+"path": "res://gd_job_database_api.gdns"
+}, {
+"base": "QcrData",
+"class": "SectionData",
+"language": "GDScript",
+"path": "res://resources/section_data.gd"
+}, {
+"base": "FieldEditor",
+"class": "SingleFieldEditor",
+"language": "GDScript",
+"path": "res://scenes/SpecificationEditor/SingleFieldEditor/single_field_editor.gd"
+}, {
+"base": "QcrData",
+"class": "SpecificationData",
+"language": "GDScript",
+"path": "res://resources/specification_data.gd"
+}, {
+"base": "FieldEditor",
+"class": "SpecificationEditor",
+"language": "GDScript",
+"path": "res://scenes/SpecificationEditor/specification_editor.gd"
+}, {
+"base": "Control",
+"class": "UnitForm",
+"language": "GDScript",
+"path": "res://scenes/UnitForm/unit_form.gd"
+}, {
+"base": "Button",
+"class": "ViewEditButton",
+"language": "GDScript",
+"path": "res://scenes/Row/edit_row_button.gd"
+} ]
+_global_script_class_icons={
+"DatabaseAPI": "",
+"DatabaseView": "",
+"Field": "",
+"FieldEditor": "",
+"FormView": "",
+"JobHeaderData": "",
+"OptionStatusButton": "",
+"QCReport": "",
+"QCReportView": "",
+"QcrData": "",
+"QueryStart": "",
+"QuestionnaireDisplay": "",
+"Row": "",
+"RowData": "",
+"SQLDatabaseAPI": "",
+"SQLJobDatabaseAPI": "",
+"SectionData": "",
+"SingleFieldEditor": "",
+"SpecificationData": "",
+"SpecificationEditor": "",
+"UnitForm": "",
+"ViewEditButton": ""
+}
+
+[application]
+
+config/name="Gui Qcr"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

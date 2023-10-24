@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="GridContainer" type="GridContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+columns = 3
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0

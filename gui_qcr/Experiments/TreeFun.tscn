@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Experiments/tree_fun.gd" type="Script" id=1]
+
+[node name="Tree" type="Tree"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -451.0
+margin_top = -246.0
+margin_right = 418.0
+margin_bottom = 246.0
+column_titles_visible = true
+script = ExtResource( 1 )

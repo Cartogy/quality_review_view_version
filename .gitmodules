@@ -1,0 +1,4 @@
+[submodule "gdnative_rust_qcr/questionnaire/"]
+	url = git@github.com:Cartogy/questionnaire.git
+[submodule "gdnative_rust_qcr/qcr_godot_api/"]
+	url = git@github.com:Cartogy/qcr_godot_api.git

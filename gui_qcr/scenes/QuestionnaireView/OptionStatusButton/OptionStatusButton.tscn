@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/QuestionnaireView/OptionStatusButton/option_status_button.gd" type="Script" id=1]
+
+[node name="OptionStatusButton" type="OptionButton"]
+margin_right = 29.0
+margin_bottom = 20.0
+script = ExtResource( 1 )
+
+[connection signal="item_selected" from="." to="." method="_on_OptionStatusButton_item_selected"]

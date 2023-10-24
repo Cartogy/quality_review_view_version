@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/FormView/form_view.gd" type="Script" id=2]
+
+[node name="FormView" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1016.0
+margin_bottom = 564.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+follow_focus = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]

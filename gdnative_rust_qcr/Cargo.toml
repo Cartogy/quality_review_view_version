@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "questionnaire",
+    "qcr_godot_api",
+    "sql_database",
+    "csv_database_reader",
+    "plotting",
+]

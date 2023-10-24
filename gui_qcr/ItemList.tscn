@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="ItemList" type="ItemList"]
+margin_right = 1023.0
+margin_bottom = 436.0
+max_columns = 3
+same_column_width = true
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+
+[node name="Button2" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+
+[node name="Button3" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+
+[node name="Button4" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0

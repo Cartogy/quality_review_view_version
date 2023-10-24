@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/SpecificationEditor/FieldEditor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/SpecificationEditor/SingleFieldEditor/single_field_editor.gd" type="Script" id=2]
+
+[node name="FieldEditor" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/MarginContainer/HBoxContainer" index="0"]
+margin_right = 414.0
+margin_bottom = 60.0
+
+[node name="LineEdit" type="LineEdit" parent="Panel/MarginContainer/HBoxContainer/PanelContainer" index="0"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 407.0
+margin_bottom = 53.0
+rect_min_size = Vector2( 400, 0 )
+
+[connection signal="popup_hide" from="." to="." method="_on_FieldEditor_popup_hide"]
+[connection signal="pressed" from="Panel/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Panel/Apply" to="." method="_on_Apply_pressed"]

@@ -1,0 +1,65 @@
+[gd_scene format=2]
+
+[node name="SpecificationEditor" type="PopupPanel"]
+visible = true
+margin_right = 577.0
+margin_bottom = 326.855
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -286.5
+margin_top = -165.0
+margin_right = 286.5
+margin_bottom = 106.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+margin_left = 39.0
+margin_top = 83.0
+margin_right = 525.0
+margin_bottom = 143.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
+margin_right = 492.0
+margin_bottom = 60.0
+
+[node name="Sections" type="OptionButton" parent="Panel/MarginContainer/HBoxContainer"]
+margin_right = 88.0
+margin_bottom = 60.0
+text = "fdsaffawe"
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/MarginContainer/HBoxContainer"]
+margin_left = 92.0
+margin_right = 492.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 400, 0 )
+
+[node name="LineEdit" type="LineEdit" parent="Panel/MarginContainer/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 393.0
+margin_bottom = 53.0
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="Cancel" type="Button" parent="Panel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 51.0
+margin_top = -79.0
+margin_right = 122.0
+margin_bottom = -44.0
+text = "Cancel"
+
+[node name="Apply" type="Button" parent="Panel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -120.0
+margin_top = -77.0
+margin_right = -48.5
+margin_bottom = -42.0
+text = "Apply"
